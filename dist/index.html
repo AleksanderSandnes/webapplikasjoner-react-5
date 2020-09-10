@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Webapplikasjoner Leksjon 2</title>
+    <link rel="stylesheet" href="../src/stylesheet.css">
+    <link rel="stylesheet" href="../src/TodoStylesheet.css">
+    <script rel="script" src="main.js"></script>
+</head>
+<body id="body">
+<nav>
+    <img alt="HIOF logo" src="../bilder/hiof.png"/>
+    <p>User user</p>
+</nav>
+<main>
+    <div>
+        <button id="button">+ Todo</button>
+    </div>
+
+    <section id="nyesteTodos">
+        <article>
+            <p class="overskrift">Todotitle</p>
+            <p class="beskrivelse">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+
+            <div class="knapper">
+                <button class="btnSlettTodo">Delete</button>
+                <button class="btnFullforTodo">Complete</button>
+            </div>
+            <p style="display: none" class="authorT">Author author</p>
+        </article>
+
+        <article>
+            <p class="overskrift">Todotitle</p>
+            <p class="beskrivelse">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+
+            <div>
+                <button class="btnSlettTodo">Delete</button>
+                <button class="btnFullforTodo">Complete</button>
+            </div>
+            <p style="display: none" class="authorT">Author author</p>
+        </article>
+
+        <article>
+            <p class="overskrift">Todotitle</p>
+            <p class="beskrivelse">I'm baby sriracha hot chicken mixtape pabst organic air ...</p>
+
+            <div>
+                <button class="btnSlettTodo">Delete</button>
+                <button class="btnFullforTodo">Complete</button>
+            </div>
+            <p style="display: none" class="authorT">Author author</p>
+        </article>
+    </section>
+
+    <section id="fullforteTodos">
+        <p>Completed todos</p>
+        <div>
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="labelCB">Filter by date</label>
+            </div>
+        </div>
+
+        <div id="listeAvFerdigeTodos">
+            <article class="th">
+                <p class="title">Title</p>
+                <p class="author">Author</p>
+                <p class="description">Description</p>
+                <p class="completedDate">Completed date</p>
+            </article>
+
+            <article>
+                <p class="title">Todotitle</p>
+                <p class="author">Author Author</p>
+                <p class="description">I'm baby sriracha hot chicken ...</p>
+                <p class="completedDate">22.12.20</p>
+            </article>
+
+            <article>
+                <p class="title">Todotitle</p>
+                <p class="author">Author Author</p>
+                <p class="description">I'm baby sriracha hot chicken ...</p>
+                <p class="completedDate">22.11.20</p>
+            </article>
+
+            <article>
+                <p class="title">Todotitle</p>
+                <p class="author">Author Author</p>
+                <p class="description">I'm baby sriracha hot chicken ...</p>
+                <p class="completedDate">22.10.20</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<div id="popUp">
+    <section id="selveVinduetForTodoLaging">
+        <div id="umulig">
+            <div>
+                <p>New todo</p>
+                <p id="exit" class="exit">X</p>
+            </div>
+            <p id="error"></p>
+            <form>
+                <label for="titleT">Title</label>
+                <input type="text" id="titleT">
+                <label for="descriptionT">Description (<span id="charLeft">125</span> characters left)</label>
+                <input type="text" id="descriptionT" maxlength="125">
+                <label for="authorT">Author</label>
+                <input type="text" id="authorT">
+                <input type="button" value="Create" id="addT">
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
